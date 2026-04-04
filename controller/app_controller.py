@@ -32,17 +32,7 @@ class AppController:
         return self.deckservice.atualizar_deck(deck_escolhido)
     
     def editar_card(self,deck_id,card_id,card):
-        deck_escolhido = self.deckservice.get_id_deck(deck_id)
-        for i in deck_escolhido.cards:
-            if i.id == card_id:
-                card_escolhido = i
-                card_escolhido.name = card.name
-                card_escolhido.description = card.description
-        return self.deckservice.atualizar_deck(deck_escolhido)
-            
-               
-    
-
+        #TODO: criar a carddto pra passar os valores :(
 
     
     
