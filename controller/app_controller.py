@@ -31,7 +31,7 @@ class AppController:
                 deck_escolhido.cards.remove(card_escolhido)
         return self.deckservice.atualizar_deck(deck_escolhido)
     
-    def editar_card(self,deck_id,card_id,card):
+    def editar_card():
         #TODO: criar a carddto pra passar os valores :(
 
     
